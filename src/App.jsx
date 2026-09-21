@@ -363,7 +363,16 @@ export default function App() {
         </section>
 
         <section className="contacts" id="contacts">
-          <div className="contact-photo" aria-hidden="true" />
+          <div className="contact-photo">
+            <a
+              className="contact-photo-credit"
+              href="https://commons.wikimedia.org/wiki/File:Containers_in_the_port_of_Odessa.jpg"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Photo: Shamil Khakirov / CC BY-SA 2.0
+            </a>
+          </div>
           <div className="contact-panel">
             <Reveal>
               <p className="kicker kicker--light">KAO DELIVERY / ODESA</p>
