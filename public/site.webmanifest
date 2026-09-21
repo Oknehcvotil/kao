@@ -1,0 +1,17 @@
+{
+  "name": "KAO Delivery",
+  "short_name": "KAO",
+  "description": "Міжнародні контейнерні перевезення та комплексна логістика.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#efeee9",
+  "theme_color": "#efeee9",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
