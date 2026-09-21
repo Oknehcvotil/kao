@@ -81,6 +81,7 @@ form { min-width: 0; }
 .brand--footer img { width: 150px; }
 .main-nav { justify-self: center; display: flex; align-items: center; gap: 36px; font-size: 13px; }
 .main-nav a { transition: opacity .2s ease; }
+.mobile-language-switch { display: none; }
 .main-nav a:hover { opacity: .5; }
 .header-actions { display: flex; align-items: center; justify-self: end; gap: 18px; }
 .language-switch { display: flex; gap: 5px; align-items: center; font-size: 11px; color: #8a8983; }
@@ -483,6 +484,30 @@ form { min-width: 0; }
     border-bottom: 1px solid rgba(23,24,22,.08);
     font-size: 14px;
   }
+
+  .mobile-language-switch {
+    display: none;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 14px 12px;
+    margin-bottom: 2px;
+    border-bottom: 1px solid rgba(23,24,22,.12);
+    color: #8a8983;
+    font-size: 12px;
+  }
+
+  .mobile-language-switch button {
+    padding: 4px 0;
+    border: 0;
+    background: transparent;
+    color: #8a8983;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .mobile-language-switch button.is-active {
+    color: var(--ink);
+  }
   .main-nav a:last-child { border-bottom: 0; }
 
   .main-nav--open {
@@ -620,7 +645,8 @@ form { min-width: 0; }
 
   .brand img { width: 128px; }
   .header-actions { gap: 8px; }
-  .language-switch { font-size: 10px; }
+  .language-switch { display: none; }
+  .mobile-language-switch { display: flex; }
 
   .main-nav {
     width: min(300px, calc(100vw - 20px));
@@ -790,8 +816,6 @@ form { min-width: 0; }
   }
 
   .brand img { width: 116px; }
-
-  .language-switch { display: none; }
 
   .menu-button {
     width: 42px;
