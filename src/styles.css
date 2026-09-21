@@ -310,8 +310,20 @@ img { display: block; width: 100%; }
   background: #161715;
 }
 .contact-photo {
-  background: url('https://images.unsplash.com/photo-1700716465891-9e5e9f501d7d?auto=format&fit=crop&w=1800&q=88') center 58% / cover no-repeat;
-  filter: saturate(.55) contrast(.98);
+  position: relative;
+  background: url('https://live.staticflickr.com/3259/2580340724_a3157408db_o.jpg') center / cover no-repeat;
+  filter: saturate(.72) contrast(.98);
+}
+.contact-photo-credit {
+  position: absolute;
+  left: 14px;
+  bottom: 10px;
+  padding: 5px 7px;
+  background: rgba(0,0,0,.45);
+  color: rgba(255,255,255,.78);
+  font-size: 8px;
+  letter-spacing: .02em;
+  backdrop-filter: blur(4px);
 }
 .contact-panel {
   padding: 100px max(32px, calc((100vw - var(--max)) / 2)) 90px 74px;
