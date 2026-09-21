@@ -173,6 +173,24 @@ export default function App() {
     localStorage.setItem('kao-language', language);
   }, [language]);
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 980) setMenuOpen(false);
+    };
+
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') setMenuOpen(false);
+    };
+
+    window.addEventListener('resize', handleResize);
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
+
   const submitQuote = async (event) => {
     event.preventDefault();
     setFormState('sending');
@@ -201,7 +219,7 @@ export default function App() {
           <img src="/logo-kao.svg" alt="KAO Delivery" />
         </a>
 
-        <nav className={`main-nav ${menuOpen ? 'main-nav--open' : ''}`}>
+        <nav id="main-navigation" className={`main-nav ${menuOpen ? 'main-nav--open' : ''}`}>
           <a href="#about" onClick={() => setMenuOpen(false)}>{t.nav.about}</a>
           <a href="#services" onClick={() => setMenuOpen(false)}>{t.nav.services}</a>
           <a href="#advantages" onClick={() => setMenuOpen(false)}>{t.nav.advantages}</a>
@@ -215,7 +233,13 @@ export default function App() {
             <button className={language === 'en' ? 'is-active' : ''} onClick={() => setLanguage('en')}>EN</button>
           </div>
           <a className="header-cta" href="#quote">{t.cta}<ArrowDownRight size={17} /></a>
-          <button className="menu-button" onClick={() => setMenuOpen((v) => !v)} aria-label="Toggle menu">
+          <button
+            className="menu-button"
+            onClick={() => setMenuOpen((v) => !v)}
+            aria-label="Toggle menu"
+            aria-expanded={menuOpen}
+            aria-controls="main-navigation"
+          >
             {menuOpen ? <X /> : <Menu />}
           </button>
         </div>
