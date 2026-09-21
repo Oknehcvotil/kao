@@ -1,16 +1,44 @@
-# KAO Delivery — Frontend
+# KAO Delivery
 
-React/Vite website for **KAO Delivery** based on the approved Canva visual direction.
+Frontend for the KAO Delivery corporate website.
 
-## Included
+## Stack
 
-- Ukrainian (default) + English language switcher
-- Responsive landing page
-- Lightweight Framer Motion reveal animations with reduced-motion support
-- Services: freight forwarding, customs brokerage, ocean freight, road delivery with own fleet
-- Quote form connected to the backend API
-- Office contacts and embedded map
-- Basic SEO / Open Graph metadata
+- React
+- Vite
+- Framer Motion
+- Lucide React
+
+## Project structure
+
+```
+src/
+├── components/
+│   ├── AboutSection.jsx
+│   ├── AdvantagesSection.jsx
+│   ├── ContactsSection.jsx
+│   ├── Footer.jsx
+│   ├── Header.jsx
+│   ├── Hero.jsx
+│   ├── LanguageSwitch.jsx
+│   ├── Logo.jsx
+│   ├── QuoteSection.jsx
+│   ├── Reveal.jsx
+│   └── ServicesSection.jsx
+├── config/
+│   └── site.js
+├── data/
+│   └── content.js
+├── App.jsx
+├── main.jsx
+└── styles.css
+```
+
+`App.jsx` only composes the page and controls the current language.
+
+Static company links and contact details are stored in `src/config/site.js`.
+Ukrainian and English content is stored in `src/data/content.js`.
+Each page section is isolated in `src/components`.
 
 ## Local development
 
@@ -20,30 +48,19 @@ cp .env.example .env
 npm run dev
 ```
 
-Set the API URL in `.env`:
+Set the backend URL in `.env`:
 
 ```env
 VITE_API_URL=http://localhost:5000
 ```
 
-For production, point `VITE_API_URL` to the deployed backend, for example:
-
-```env
-VITE_API_URL=https://api.kao.delivery
-```
-
-## Build
+## Production
 
 ```bash
 npm run build
 npm run preview
 ```
 
-## Main files
+The production build is generated in `dist/`.
 
-- `src/App.jsx` — page sections, bilingual copy and form logic
-- `src/styles.css` — full visual system and responsive styles
-- `src/main.jsx` — React entry
-- `index.html` — SEO metadata
-
-The quote form sends `POST /api/quote` to the backend repository.
+The quote form sends a `POST /api/quote` request to the KAO Delivery backend.
