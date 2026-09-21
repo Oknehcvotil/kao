@@ -335,13 +335,6 @@ export default function App() {
                 <a href="tel:+380966938465"><Phone size={17} />+380 96 693 84 65</a>
                 <a href="mailto:office@kao.delivery"><Mail size={17} />office@kao.delivery</a>
               </div>
-              <div className="quote-truck">
-                <img
-                  src="https://images.unsplash.com/photo-1700616270841-078da5600853?auto=format&fit=crop&w=1400&q=82"
-                  alt={language === 'uk' ? 'Контейнеровоз KAO Delivery' : 'Container truck for KAO Delivery'}
-                />
-                <span>{language === 'uk' ? 'Власний автопарк • контейнерні перевезення' : 'Own fleet • container road delivery'}</span>
-              </div>
             </Reveal>
 
             <Reveal>
