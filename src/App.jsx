@@ -220,6 +220,27 @@ export default function App() {
         </a>
 
         <nav id="main-navigation" className={`main-nav ${menuOpen ? 'main-nav--open' : ''}`}>
+          <div className="mobile-language-switch" aria-label="Language">
+            <button
+              className={language === 'uk' ? 'is-active' : ''}
+              onClick={() => {
+                setLanguage('uk');
+                setMenuOpen(false);
+              }}
+            >
+              UA
+            </button>
+            <span>/</span>
+            <button
+              className={language === 'en' ? 'is-active' : ''}
+              onClick={() => {
+                setLanguage('en');
+                setMenuOpen(false);
+              }}
+            >
+              EN
+            </button>
+          </div>
           <a href="#about" onClick={() => setMenuOpen(false)}>{t.nav.about}</a>
           <a href="#services" onClick={() => setMenuOpen(false)}>{t.nav.services}</a>
           <a href="#advantages" onClick={() => setMenuOpen(false)}>{t.nav.advantages}</a>
