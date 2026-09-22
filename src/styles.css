@@ -440,12 +440,26 @@ form { min-width: 0; }
   padding-top: 16px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 16px;
   border-top: 1px solid rgba(23,24,22,.10);
 }
 
 .footer-bottom p {
   font-size: 11px;
   letter-spacing: .04em;
+}
+
+.footer-photo-credit {
+  color: inherit;
+  font-size: 9px;
+  opacity: .55;
+  text-decoration: none;
+  transition: opacity .2s ease;
+}
+
+.footer-photo-credit:hover {
+  opacity: .9;
 }
 
 .brand--footer { color: var(--ink); }
@@ -865,6 +879,8 @@ form { min-width: 0; }
   .footer-bottom {
     margin-top: 24px;
     padding-top: 14px;
+    flex-direction: column;
+    gap: 6px;
   }
 
   .brand--footer img { width: 142px; }

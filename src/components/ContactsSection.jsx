@@ -8,7 +8,7 @@ export default function ContactsSection({ text }) {
     <section className="contacts" id="contacts">
       <div className="contact-photo">
         <img
-          src="/contact-port-odesa.jpg"
+          src="https://upload.wikimedia.org/wikipedia/commons/3/30/The_Odessa_port_-_panoramio.jpg"
           alt="Одеський морський порт"
           loading="lazy"
           decoding="async"

@@ -13,6 +13,14 @@ export default function Footer({ text, location }) {
 
       <div className="footer-bottom">
         <p>© {new Date().getFullYear()}</p>
+        <a
+          className="footer-photo-credit"
+          href="https://commons.wikimedia.org/wiki/File:The_Odessa_port_-_panoramio.jpg"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Port photo: Valeriy Ded / CC BY 3.0
+        </a>
       </div>
     </footer>
   );
