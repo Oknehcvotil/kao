@@ -368,7 +368,7 @@ form { min-width: 0; }
 }
 .contact-photo {
   position: relative;
-  background: url('/contact-port.webp') center 48% / cover no-repeat;
+  background: url('/contact-port.jpg') center 48% / cover no-repeat;
   filter: saturate(.88) contrast(.98);
 }
 .contact-panel {
