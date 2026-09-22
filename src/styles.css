@@ -368,19 +368,8 @@ form { min-width: 0; }
 }
 .contact-photo {
   position: relative;
-  background: url('https://live.staticflickr.com/3259/2580340724_a3157408db_o.jpg') center / cover no-repeat;
-  filter: saturate(.72) contrast(.98);
-}
-.contact-photo-credit {
-  position: absolute;
-  left: 14px;
-  bottom: 10px;
-  padding: 5px 7px;
-  background: rgba(0,0,0,.45);
-  color: rgba(255,255,255,.78);
-  font-size: 8px;
-  letter-spacing: .02em;
-  backdrop-filter: blur(4px);
+  background: url('/contact-port.webp') center 48% / cover no-repeat;
+  filter: saturate(.88) contrast(.98);
 }
 .contact-panel {
   padding: 100px max(32px, calc((100vw - var(--max)) / 2)) 90px 74px;
@@ -998,13 +987,6 @@ form { min-width: 0; }
 
   .contact-photo {
     min-height: 260px;
-  }
-
-  .contact-photo-credit {
-    max-width: calc(100% - 20px);
-    left: 10px;
-    bottom: 8px;
-    font-size: 7px;
   }
 
   .contact-panel {
