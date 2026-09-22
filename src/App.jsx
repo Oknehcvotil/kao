@@ -39,7 +39,7 @@ export default function App() {
         <ContactsSection text={text.contacts} />
       </main>
 
-      <Footer text={text.footer} />
+      <Footer text={text.footer} location={text.footerLocation} />
     </div>
   );
 }
