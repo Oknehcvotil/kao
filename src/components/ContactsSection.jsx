@@ -6,7 +6,14 @@ import { site } from '../config/site';
 export default function ContactsSection({ text }) {
   return (
     <section className="contacts" id="contacts">
-      <div className="contact-photo" aria-hidden="true" />
+      <div className="contact-photo">
+        <img
+          src="/contact-port-odesa.jpg"
+          alt="Одеський морський порт"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
 
       <div className="contact-panel">
         <Reveal>
