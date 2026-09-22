@@ -5,7 +5,7 @@ export const site = {
   emailHref: 'mailto:office@kao.delivery',
   directionsUrl:
     'https://www.google.com/maps/search/?api=1&query=4+Viacheslava+Chornovola+St+Odesa+Ukraine',
-  logo: '/logo-kao.svg',
+  logo: '/logo-kao.png',
   images: {
     aboutMain:
       'https://images.unsplash.com/photo-1494412651409-8963ce7935a7?auto=format&fit=crop&w=1400&q=88',
