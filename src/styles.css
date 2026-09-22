@@ -1039,6 +1039,283 @@ form { min-width: 0; }
   }
 }
 
+/* Desktop scale: slightly larger type and more breathing room.
+   Mobile and tablet styles below 981px stay unchanged. */
+@media (min-width: 981px) {
+  .section {
+    width: min(1280px, calc(100% - 72px));
+    padding-top: 138px;
+    padding-bottom: 138px;
+  }
+
+  .site-header {
+    min-height: 78px;
+  }
+
+  .main-nav {
+    font-size: 14px;
+  }
+
+  .language-switch,
+  .language-switch button {
+    font-size: 12px;
+  }
+
+  .header-cta {
+    min-height: 48px;
+    padding-inline: 20px;
+    font-size: 13px;
+  }
+
+  .hero {
+    min-height: 950px;
+  }
+
+  .hero-content {
+    width: min(820px, calc(100% - 72px));
+    margin-bottom: 255px;
+  }
+
+  .hero h1 {
+    max-width: 780px;
+    font-size: clamp(68px, 7.15vw, 112px);
+  }
+
+  .hero-description {
+    max-width: 650px;
+    margin-top: 36px;
+    font-size: 18.5px;
+    line-height: 1.68;
+  }
+
+  .hero-bottom {
+    bottom: 40px;
+    padding-top: 24px;
+  }
+
+  .hero-bottom > p {
+    font-size: 24px;
+    line-height: 1.35;
+  }
+
+  .pill {
+    min-height: 54px;
+    padding-inline: 22px;
+    font-size: 13px;
+  }
+
+  .kicker {
+    margin-bottom: 20px;
+    font-size: 11px;
+  }
+
+  .about {
+    padding-top: 160px;
+  }
+
+  .about h2,
+  .services h2,
+  .advantages h2,
+  .quote-intro h2,
+  .contact-panel h2 {
+    font-size: clamp(62px, 7vw, 110px);
+  }
+
+  .about-copy {
+    max-width: 570px;
+  }
+
+  .about-copy p {
+    margin-bottom: 20px;
+    font-size: 16.5px;
+    line-height: 1.82;
+  }
+
+  .about-gallery {
+    margin-top: 105px;
+    grid-template-rows: 360px 360px;
+    gap: 18px;
+  }
+
+  .services {
+    padding-top: 100px;
+  }
+
+  .section-title-row {
+    gap: 100px;
+    margin-bottom: 80px;
+  }
+
+  .section-title-row p {
+    max-width: 520px;
+    font-size: 16.5px;
+    line-height: 1.82;
+  }
+
+  .service-row {
+    min-height: 172px;
+    gap: 24px;
+  }
+
+  .service-number {
+    font-size: 12px;
+  }
+
+  .service-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .service-row h3 {
+    font-size: 25px;
+    line-height: 1.3;
+  }
+
+  .service-row p {
+    max-width: 560px;
+    font-size: 15.5px;
+    line-height: 1.72;
+  }
+
+  .service-row > a {
+    width: 46px;
+    height: 46px;
+  }
+
+  .advantages {
+    min-height: 920px;
+  }
+
+  .advantages-grid {
+    margin-top: 86px;
+  }
+
+  .advantage-card {
+    min-height: 250px;
+    padding: 34px;
+  }
+
+  .advantage-top span {
+    font-size: 11px;
+  }
+
+  .advantage-card h3 {
+    margin-top: 76px;
+    margin-bottom: 14px;
+    font-size: 22px;
+  }
+
+  .advantage-card p {
+    font-size: 14.5px;
+    line-height: 1.7;
+  }
+
+  .quote-grid {
+    gap: 130px;
+  }
+
+  .quote-intro p {
+    max-width: 510px;
+    margin: 34px 0;
+    font-size: 16.5px;
+    line-height: 1.82;
+  }
+
+  .direct-links {
+    gap: 14px;
+  }
+
+  .direct-links a {
+    font-size: 14.5px;
+  }
+
+  .quote-form {
+    padding: 48px;
+  }
+
+  .quote-form label > span,
+  .quote-form legend {
+    margin-bottom: 10px;
+    font-size: 11.5px;
+  }
+
+  .quote-form > label,
+  .form-row {
+    margin-bottom: 28px;
+  }
+
+  .form-row {
+    gap: 24px;
+  }
+
+  .quote-form input:not([type="radio"]),
+  .quote-form textarea {
+    padding: 14px 2px 16px;
+    font-size: 16px;
+  }
+
+  .quote-form textarea {
+    min-height: 135px;
+  }
+
+  .quote-form fieldset {
+    gap: 24px;
+    margin-bottom: 30px;
+  }
+
+  .quote-form fieldset label {
+    font-size: 14px;
+  }
+
+  .form-button {
+    min-height: 58px;
+    padding-inline: 20px;
+    font-size: 14px;
+  }
+
+  .form-status {
+    font-size: 13px;
+  }
+
+  .contacts {
+    min-height: 810px;
+  }
+
+  .contact-panel {
+    padding-top: 116px;
+    padding-bottom: 106px;
+    padding-left: 82px;
+  }
+
+  .contact-list {
+    gap: 27px;
+    margin: 54px 0;
+  }
+
+  .contact-list span,
+  .contact-list a {
+    font-size: 14.5px;
+    line-height: 1.7;
+  }
+
+  .site-footer {
+    padding-top: 40px;
+  }
+
+  .footer-main {
+    min-height: 104px;
+  }
+
+  .footer-description,
+  .footer-location {
+    font-size: 13px;
+  }
+
+  .footer-bottom p {
+    font-size: 12px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after {
