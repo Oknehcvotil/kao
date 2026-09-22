@@ -76,6 +76,7 @@ export const content = {
       route: 'Побудувати маршрут',
     },
     footer: 'Міжнародні контейнерні перевезення та комплексний логістичний супровід.',
+    footerLocation: 'Україна, Одеса',
   },
 
   en: {
@@ -155,5 +156,6 @@ export const content = {
       route: 'Get directions',
     },
     footer: 'International container shipping and end-to-end logistics support.',
+    footerLocation: 'Ukraine, Odesa',
   },
 };
