@@ -1,11 +1,19 @@
 import Logo from './Logo';
 
-export default function Footer({ text }) {
+export default function Footer({ text, location }) {
   return (
     <footer className="site-footer">
-      <Logo footer />
-      <p>{text}</p>
-      <p>© {new Date().getFullYear()}</p>
+      <div className="footer-main">
+        <Logo footer />
+
+        <p className="footer-description">{text}</p>
+
+        <p className="footer-location">{location}</p>
+      </div>
+
+      <div className="footer-bottom">
+        <p>© {new Date().getFullYear()}</p>
+      </div>
     </footer>
   );
 }
