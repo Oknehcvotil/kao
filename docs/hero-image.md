@@ -1,5 +1,11 @@
 # Homepage hero image
 
+Current asset: `public/hero-container-ship-v3.jpg` (1536 × 768, approximately 595 KiB).
+
+Selected and supplied by the user on 2026-09-30 as `Изображение ChatGPT 30 сент. 2026 г., 15_36_02.jpg`. The JPEG is copied unchanged. `src/styles.css` controls the responsive crop; `index.html` preloads the image and references it in sharing metadata.
+
+## Previous version (v2)
+
 Asset: `public/hero-container-ship-v2.webp` (1672 × 941, approximately 262 KiB).
 
 Created on 2026-09-30 with the built-in ImageGen tool. This is a generated illustrative maritime scene, not a photograph of KAO's fleet or a particular port.

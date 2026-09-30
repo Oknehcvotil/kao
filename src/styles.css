@@ -120,15 +120,15 @@ form { min-width: 0; }
   position: absolute;
   inset: 0;
   background:
-    url('/hero-container-ship-v2.webp')
-    center 52% / cover no-repeat;
+    url('/hero-container-ship-v3.jpg')
+    85% 52% / cover no-repeat;
   filter: saturate(.9) contrast(1.02);
 }
 .hero-scrim {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(10,10,9,.60) 0%, rgba(10,10,9,.18) 55%, rgba(10,10,9,.08) 100%),
+    linear-gradient(90deg, rgba(10,10,9,.78) 0%, rgba(10,10,9,.36) 55%, rgba(10,10,9,.10) 100%),
     linear-gradient(0deg, rgba(10,10,9,.60) 0%, transparent 45%);
 }
 .hero-content {
@@ -719,6 +719,12 @@ form { min-width: 0; }
 
   .hero-photo {
     background-position: 88% center;
+  }
+
+  .hero-scrim {
+    background:
+      linear-gradient(90deg, rgba(8,18,26,.58), rgba(8,18,26,.38)),
+      linear-gradient(0deg, rgba(8,18,26,.58), transparent 60%);
   }
 
   .hero-content {
