@@ -120,7 +120,7 @@ form { min-width: 0; }
   position: absolute;
   inset: 0;
   background:
-    url('/hero-container-ship-v3.jpg')
+    url('/hero-container-ship-v4.jpg')
     85% 52% / cover no-repeat;
   filter: saturate(.9) contrast(1.02);
 }

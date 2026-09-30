@@ -1,8 +1,8 @@
 # Homepage hero image
 
-Current asset: `public/hero-container-ship-v3.jpg` (1536 × 768, approximately 595 KiB).
+Current asset: `public/hero-container-ship-v4.jpg` (1536 × 904, approximately 615 KiB).
 
-Selected and supplied by the user on 2026-09-30 as `Изображение ChatGPT 30 сент. 2026 г., 15_36_02.jpg`. The JPEG is copied unchanged. `src/styles.css` controls the responsive crop; `index.html` preloads the image and references it in sharing metadata.
+Selected and supplied by the user on 2026-09-30 as `IMG_1004.jpeg`. The JPEG is copied unchanged. `src/styles.css` controls the responsive crop; `index.html` preloads the image and references it in sharing metadata.
 
 ## Previous version (v2)
 
