@@ -8,8 +8,10 @@ export default function ContactsSection({ text }) {
     <section className="contacts" id="contacts">
       <div className="contact-photo">
         <img
-          src="/contact-port-odesa-user.jpg?v=4"
+          src="/contact-port-odesa-20260930.jpg"
           alt="Одеський морський порт"
+          width="1280"
+          height="1106"
           loading="lazy"
           decoding="async"
         />
