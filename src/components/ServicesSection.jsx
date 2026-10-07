@@ -1,6 +1,7 @@
 import {
   ArrowRight,
   FileText,
+  Plane,
   Route,
   Ship,
   Truck,
@@ -8,7 +9,7 @@ import {
 
 import Reveal from './Reveal';
 
-const icons = [Route, FileText, Ship, Truck];
+const icons = [Route, FileText, Ship, Truck, Plane];
 
 export default function ServicesSection({ text }) {
   return (
@@ -20,7 +21,7 @@ export default function ServicesSection({ text }) {
 
       <div className="service-list">
         {text.items.map((item, index) => {
-          const Icon = icons[index];
+          const Icon = icons[index] || Route;
 
           return (
             <Reveal key={item.title} delay={index * 0.04}>
