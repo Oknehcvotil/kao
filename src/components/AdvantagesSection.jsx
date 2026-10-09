@@ -35,7 +35,7 @@ export default function AdvantagesSection({ text }) {
             const Icon = icons[index] || ArrowRight;
 
             return (
-              <Reveal key={title} delay={index * 0.04}>
+              <Reveal key={title} className="advantage-cell" delay={index * 0.04}>
                 <article className="advantage-card">
                   <div className="advantage-top">
                     <span>{String(index + 1).padStart(2, '0')}</span>

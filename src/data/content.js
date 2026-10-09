@@ -117,7 +117,7 @@ export const content = {
     hero: {
       title: "International ocean container shipping",
       text: "KAO Delivery provides a full range of logistics services, from loading at the factory to delivering your cargo to the destination country.",
-      note: "We minimize risk and optimize routes.",
+      note: "We minimize risks and optimize routes.",
       primary: "Get a quote",
       secondary: "Our services",
     },
@@ -132,7 +132,7 @@ export const content = {
     services: {
       title: "Our services",
       intro:
-        "Comprehensive container logistics — from route planning and customs clearance to delivering cargo to the final recipient.",
+        "Comprehensive container logistics — from route planning and customs clearance to cargo delivery to the consignee.",
       items: [
         {
           title: "Freight forwarding",
@@ -140,11 +140,11 @@ export const content = {
         },
         {
           title: "Customs brokerage",
-          text: "Document preparation, customs clearance and support throughout customs procedures.",
+          text: "Customs documentation, clearance and support at every stage.",
         },
         {
           title: "Ocean freight",
-          text: "International FCL and LCL shipping with suitable routes, shipping lines and transit times.",
+          text: "International FCL and LCL shipments, selecting suitable routes and shipping lines to meet your requirements.",
         },
         {
           title: "Inland delivery",
@@ -159,7 +159,7 @@ export const content = {
     advantages: {
       title: "Why choose us",
       items: [
-        ["Risk reduction", "We choose proven routes, ports and partners."],
+        ["Risk reduction", "We choose reliable routes, ports and partners."],
         [
           "Our own truck fleet",
           "Flexibility, prompt truck dispatch and control over inland transport.",
@@ -170,7 +170,7 @@ export const content = {
         ],
         [
           "Quick quotes",
-          "We quickly assess the market and get back to you with practical options.",
+          "We promptly analyse the market and shipping options to provide solutions that meet your needs.",
         ],
         [
           "Regular reporting",
@@ -178,13 +178,13 @@ export const content = {
         ],
         [
           "Extensive experience",
-          "We understand the Ukrainian market, ports and documentation procedures.",
+          "We know the Ukrainian market and how to navigate its logistics challenges.",
         ],
       ],
     },
     quote: {
       title: "Get a quote",
-      text: "Share the basic details of your cargo and route — we will contact you and suggest a shipping option.",
+      text: "Share the key details of your cargo and route, and we will contact you with a suitable shipping option.",
       name: "Name",
       phone: "Phone",
       email: "Email",
