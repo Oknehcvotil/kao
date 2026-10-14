@@ -1,6 +1,14 @@
 # Homepage hero image
 
-Current asset: `public/hero-container-ship-v4.jpg` (1536 × 904, approximately 615 KiB).
+Current hero asset: `public/hero-container-ship-v6.webp` (1536 × 900, WebP quality 95).
+
+Re-encoded directly from the user-supplied JPEG on 2026-10-14, at its native resolution. The previous v5 asset was 1920 × 1125 despite the source being 1536 × 900 and showed visible compression damage in the wake and container details. Do not use v5 as an encoding source or upscale the image to claim higher detail.
+
+The CSS background and image preload both reference v6 so browsers fetch the same fresh asset. Existing responsive positioning, overlays and sharing metadata are unchanged. Native source resolution still limits sharpness on large/high-density displays; a genuinely higher-resolution source is needed for more detail there.
+
+## Previous version (v4)
+
+Asset: `public/hero-container-ship-v4.jpg` (1536 × 904, approximately 615 KiB).
 
 Selected and supplied by the user on 2026-09-30 as `IMG_1004.jpeg`. The JPEG is copied unchanged. `src/styles.css` controls the responsive crop; `index.html` preloads the image and references it in sharing metadata.
 
