@@ -15,7 +15,7 @@ export default function QuoteSection({ language, text }) {
     const payload = Object.fromEntries(new FormData(form).entries());
 
     try {
-      const apiBase = (import.meta.env.VITE_API_URL || '').replace(/\/$/, '');
+      const apiBase = (import.meta.env.VITE_API_URL || 'https://kao-backend.vercel.app').replace(/\/$/, '');
       const response = await fetch(`${apiBase}/api/quote`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
