@@ -6,10 +6,12 @@ import { site } from '../config/site';
 
 export default function QuoteSection({ language, text }) {
   const [status, setStatus] = useState('idle');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const submitQuote = async (event) => {
     event.preventDefault();
     setStatus('sending');
+    setErrorMessage('');
 
     const form = event.currentTarget;
     const payload = Object.fromEntries(new FormData(form).entries());
@@ -23,12 +25,22 @@ export default function QuoteSection({ language, text }) {
       });
 
       if (!response.ok) {
-        throw new Error('Request failed');
+        if (response.status === 400) {
+          const body = await response.json().catch(() => ({}));
+          const messages = {
+            'Name is required.': text.nameError,
+            'Valid phone is required.': text.phoneError,
+            'Valid email is required.': text.emailError,
+          };
+          throw new Error(messages[body.error] || text.error);
+        }
+        throw new Error(text.error);
       }
 
       form.reset();
       setStatus('success');
-    } catch {
+    } catch (error) {
+      setErrorMessage(error.message || text.error);
       setStatus('error');
     }
   };
@@ -81,7 +93,7 @@ export default function QuoteSection({ language, text }) {
 
             <label>
               <span>{text.details}</span>
-              <textarea name="details" rows="4" required />
+              <textarea name="details" rows="4" />
             </label>
 
             <fieldset>
@@ -122,7 +134,7 @@ export default function QuoteSection({ language, text }) {
             )}
 
             {status === 'error' && (
-              <p className="form-status error">{text.error}</p>
+              <p className="form-status error">{errorMessage || text.error}</p>
             )}
           </form>
         </Reveal>
